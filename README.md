@@ -1,17 +1,86 @@
-# React + Vite
+# 🚀 Suman Basak – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website!  
+This project showcases my skills, projects, and experience as a **Software Engineer & Web Developer**.
 
-Currently, two official plugins are available:
+🔗 **Live Portfolio:** *(Add live link here when deployed)*  
+🔗 **GitHub:** https://github.com/suman0777  
+🔗 **LinkedIn:** https://www.linkedin.com/in/suman-basak-191237290/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 👨‍💻 About Me
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I am a passionate **Software Engineer** with a strong foundation in **Data Structures & Algorithms**, **Frontend Development**, and **Backend fundamentals**.  
+I enjoy building clean, scalable, and user-focused applications while continuously improving my problem-solving skills through competitive programming and real-world projects.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# PortFolio
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3 / Tailwind CSS
+
+### Backend & Tools
+- Node.js (Learning)
+- Git & GitHub
+- REST APIs
+- VS Code
+
+### Programming Languages
+- C
+- C++
+- Java
+- JavaScript
+
+---
+
+## 📂 Features
+
+- ⚡ Modern, responsive UI
+- 🎨 Clean and minimal design
+- 📱 Mobile-friendly layout
+- 🔗 Direct links to GitHub & LinkedIn
+- 🧠 Project-focused presentation
+
+---
+
+## 📌 Projects Included
+
+- **Portfolio Website** – Personal branding & showcase  
+- **Discord Bots** – Automation and utilities  
+- **Data Cleaning Projects** – Freelance experience  
+- **DSA Solutions** – Optimized problem solving in C++
+
+*(More projects will be added continuously)*
+
+---
+
+## 🧑‍💼 Experience
+
+- **Freelancer (2+ Years)**  
+  - Data cleaning and processing  
+  - Discord bot development  
+  - Client-focused problem solving
+
+---
+
+## 📈 What I’m Currently Working On
+
+- Improving React & frontend architecture
+- Learning Node.js & backend development
+- Advanced DSA & competitive programming
+- Building production-ready applications
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+```bash
+git clone https://github.com/suman0777/your-portfolio-repo.git
+cd your-portfolio-repo
+npm install
+npm run dev

@@ -1,3 +1,4 @@
+import Backgrounds from '../BuildsSmall/Backgrounds'
 import Homepage from '../Pages/Homepage'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
@@ -5,9 +6,13 @@ import { Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div >
-      <Routes>
-      <Route path="/" element={<Homepage />} />
-      </Routes>
+      
+      <Backgrounds>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </Backgrounds>
+      
     </div >
     
   )

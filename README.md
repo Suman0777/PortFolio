@@ -59,14 +59,6 @@ I enjoy building clean, scalable, and user-focused applications while continuous
 
 ---
 
-## 🧑‍💼 Experience
-
-- **Freelancer (2+ Years)**  
-  - Data cleaning and processing  
-  - Discord bot development  
-  - Client-focused problem solving
-
----
 
 ## 📈 What I’m Currently Working On
 

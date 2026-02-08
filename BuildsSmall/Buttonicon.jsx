@@ -6,7 +6,7 @@ const Buttonicon = ({ label, to }) => {
 
   return (
     <button
-      onClick={()=> navigate(to)}
+      onClick={()=> to && navigate(to)}
       className="relative text-xl font-medium group "
     >
       {label}

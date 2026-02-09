@@ -11,7 +11,7 @@ const Project = () => {
   return (
     <div className="mx-auto mt-12 max-w-5xl px-2">
       
-      {/* BIG cards layout */}
+      {/*  cards layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {cardsElement.map((item, index) => (
           <div
@@ -23,7 +23,7 @@ const Project = () => {
               hover:scale-105 hover:shadow-2xl
             "
           >
-            {/* Bigger image */}
+            {/*  image */}
             <div className="h-64 w-full bg-[#92475231] rounded-xl flex items-center justify-center">
               <img
                 src={item.imgins}
@@ -32,12 +32,12 @@ const Project = () => {
               />
             </div>
 
-            {/* Bigger text */}
+            {/*  text */}
             <p className="text-lg font-semibold text-center text-amber-50">
               {item.desc}
             </p>
 
-            {/* Bigger links */}
+            {/*  links */}
             <div className="flex justify-between text-sm font-medium px-2">
               <a href="#" className="text-blue-500 hover:underline">
                 GitHub

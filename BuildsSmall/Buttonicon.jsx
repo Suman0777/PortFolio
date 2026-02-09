@@ -7,7 +7,7 @@ const Buttonicon = ({ label, to }) => {
   return (
     <button
       onClick={()=> to && navigate(to)}
-      className="relative text-xl font-medium group "
+      className="relative text-xl font-medium group  cursor-pointer "
     >
       {label}
 

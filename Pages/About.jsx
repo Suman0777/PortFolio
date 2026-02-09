@@ -6,7 +6,7 @@ import Imagess from '../BuildsSmall/Imagess'
 const About = () => {
   return (
     <div >
-      
+
     <div className='mx-auto max-w-4xl px-4 py-12 md:px-0 md:py-24'>
             {/* Main Content */}
       <div
@@ -96,6 +96,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+
 
       {/* Resume Section */}
         <div className="mt-16 flex justify-center">

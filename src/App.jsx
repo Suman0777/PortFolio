@@ -17,9 +17,6 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path='/about' element={<About/>}/>
           <Route path='/projects' element={<Project/>}/>
-
-
-          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Backgrounds>
       

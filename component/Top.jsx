@@ -1,18 +1,35 @@
-import React from 'react'
-import Imagess from '../BuildsSmall/Imagess'
-import Buttonicon from '../BuildsSmall/Buttonicon'
+import React, { useState } from "react";
+import Buttonicon from "../BuildsSmall/Buttonicon";
+import Imagess from "../BuildsSmall/Imagess";
 
 const Top = () => {
+  const [selected, setSelected] = useState(null);
+
+  const navItems = [
+    { label: "Home", to: "/" },
+    { label: "Project", to: "/projects" },
+    { label: "About", to: "/about" },
+    { label: "Link", to: "/links" },
+    { label: "Career", to: "/career" },
+  ];
+
   return (
     <div className="mx-auto mt-9 max-w-2xl flex justify-between items-center px-4">
 
       {/* Navigation */}
       <div className="flex gap-6">
-        <Buttonicon label="Home" to="/" />
-        <Buttonicon label="Project" to="/projects" />
-        <Buttonicon label="About" to="/about" />
-        <Buttonicon label="Link" to="/links" />
-        <Buttonicon label="Career" to="/career" />
+        {navItems.map((item, index) => (
+          <div
+            key={index}
+            onClick={() => setSelected(index)}
+            className={`
+              transition-all duration-300 cursor-pointer
+              ${selected === index ? "scale-110 font-extrabold" : ""}
+            `}
+          >
+            <Buttonicon label={item.label} to={item.to} />
+          </div>
+        ))}
       </div>
 
       {/* Social Links */}
@@ -22,8 +39,9 @@ const Top = () => {
         <Imagess Link="https://www.linkedin.com/in/suman-basak-191237290/" imagesss="/LinkdinPic.svg" />
         <Imagess Link="https://github.com/suman0777" imagesss="/twitterpic.svg" />
       </div>
-    </div>
-  )
-}
 
-export default Top
+    </div>
+  );
+};
+
+export default Top;

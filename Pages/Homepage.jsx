@@ -5,7 +5,6 @@ import MiddleCom from '../component/MiddleCom'
 const Homepage = () => {
   return (
     <div >
-        <Top/>
         <MiddleCom/>
     </div>
   )

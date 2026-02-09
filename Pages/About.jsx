@@ -6,12 +6,7 @@ import Imagess from '../BuildsSmall/Imagess'
 const About = () => {
   return (
     <div >
-
-      {/* Top Navigation */}
-      <div className="mb-16">
-        <Top />
-      </div>
-
+      
     <div className='mx-auto max-w-4xl px-4 py-12 md:px-0 md:py-24'>
             {/* Main Content */}
       <div
@@ -108,16 +103,17 @@ const About = () => {
             href="/resume.pdf"
             download
             className="
-            bg-black/30 backdrop-blur-xl
+            bg-white/10 backdrop-blur-xl
             p-5 rounded-2xl
             w-full max-w-2xl
             flex items-center justify-between
             cursor-pointer
-            hover:bg-black/40
-            transition
+            hover:bg-white/20
+             transition
+              
             "
         >
-            <p className="text-[#ECECEC] font-medium">
+            <p className="text-[#ACBAC4] font-medium">
             Resume
             </p>
 

@@ -68,7 +68,7 @@ const About = () => {
               </span>
             </span>
 
-            &nbsp;with a passion for building clean, scalable, and user-first web applications.
+            &nbsp;with a passion for building clean, scalable, and mobile-first web applications.
             I enjoy solving complex problems and turning ideas into reliable products that deliver real impact.
             Focused on maintainable code and seamless user experiences,
             I’m always learning, building, and pushing myself to create solutions that truly matter.
@@ -98,7 +98,6 @@ const About = () => {
       </div>
 
 
-
       {/* Resume Section */}
         <div className="mt-16 flex justify-center">
         <a
@@ -126,6 +125,49 @@ const About = () => {
             />
         </a>
         </div>
+
+
+
+
+    {/* Skill Section */}
+
+      <div className='mt-16 flex justify-center'>
+          <div className='bg-[#232B3B]/40 backdrop-blur-xl
+            p-5 rounded-2xl
+            w-full max-w-2xl
+            flex flex-col gap-3.5 items-center
+            cursor-pointer
+            hover:bg-[#232B3B]/30
+             transition'>
+            <h1 className='text-white font-medium'>
+                Skills
+            </h1>
+            <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-9 gap-6 place-items-center">
+                <img src="https://cdn.simpleicons.org/javascript" width="30" className=' rounded-b-sm'/>
+                <img src="https://cdn.simpleicons.org/typescript" width="40" />
+                <img src="https://cdn.simpleicons.org/c" width="40" />
+                <img src="https://cdn.simpleicons.org/cplusplus" width="40" />
+                <img src="https://cdn.simpleicons.org/html5" width="40" />
+                <img src="https://cdn.simpleicons.org/css" width="40" />
+                <img src="https://cdn.simpleicons.org/react" width="40" />
+                <img src="https://cdn.simpleicons.org/redux" width="40" />
+                <img src="https://cdn.simpleicons.org/tailwindcss" width="40" />
+                <img src="https://cdn.simpleicons.org/vite" width="40" />
+                <img src="https://cdn.simpleicons.org/mongodb" width="40" />
+                <img src="https://cdn.simpleicons.org/mysql" width="40" />
+                <img src="https://cdn.simpleicons.org/postgresql" width="40" />
+                <img src="https://cdn.simpleicons.org/express" width="40" />
+                <img src="https://cdn.simpleicons.org/nodedotjs" width="40" />
+                <img src="https://cdn.simpleicons.org/git" width="40" />
+                <img src="https://cdn.simpleicons.org/github" width="40" />
+                <img src="https://cdn.simpleicons.org/postman" width="40" />
+                <img src="https://cdn.simpleicons.org/figma" width="40" />
+            </div>
+          </div>
+      </div>
+
+
+
     </div>
 
           </div>

@@ -69,7 +69,7 @@ const MiddleCom = () => {
             </span>
             </span>
 
-            &nbsp;with a passion for building clean, scalable, and user-first web applications.
+            &nbsp;with a passion for building clean, scalable, and mobile-first web applications.
             I enjoy solving complex problems and turning ideas into reliable products that deliver real impact.
             Focused on maintainable code and seamless user experiences,
             I’m always learning, building, and pushing myself to create solutions that truly matter.

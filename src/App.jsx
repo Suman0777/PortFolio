@@ -15,7 +15,6 @@ function App() {
     <Backgrounds>
       <Top />
 
-      {/* key makes animation restart */}
       <div key={location.pathname} className="blur-in">
         <Routes>
           <Route path="/" element={<Homepage />} />

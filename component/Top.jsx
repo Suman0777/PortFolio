@@ -39,15 +39,17 @@ const Top = () => {
       <div>
         <img 
         onClick={()=>sethumburger(true)}
-        className="lg:hidden h-10 w-10"
+        className="lg:hidden h-10 w-10 cursor-pointer"
         src="/bar.png" alt="Humbargar" />
       </div>
       
       {humbugerrr && (
+        
         <MobileSidebar
           open={humbugerrr}
           onClose={() => sethumburger(false)}
         />
+
       )}
 
 

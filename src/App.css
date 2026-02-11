@@ -13,3 +13,22 @@
 .blur-in {
   animation: blurIn 0.52s ease-out forwards;
 }
+
+
+@keyframes slideBlurInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px); 
+    filter: blur(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+.slide-blur-in-left {
+  animation: slideBlurInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+

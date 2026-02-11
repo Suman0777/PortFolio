@@ -73,6 +73,7 @@ const MiddleCom = () => {
             I enjoy solving complex problems and turning ideas into reliable products that deliver real impact.
             Focused on maintainable code and seamless user experiences,
             I’m always learning, building, and pushing myself to create solutions that truly matter.
+            
         </p>
         </div>
 
@@ -96,6 +97,31 @@ const MiddleCom = () => {
         </div>
 
       </div>
+
+      <div className="mt-20 flex justify-center">
+  <a
+    href="mailto:sumanbasakpl@gmail.com"
+    className="
+      w-full max-w-xl
+      flex items-center justify-center gap-3
+      rounded-2xl
+      bg-white/10 backdrop-blur-xl
+      px-6 py-5
+      text-center text-sm sm:text-base
+      text-white font-medium
+      hover:bg-white/20
+      hover:scale-[1.02]
+      transition-all duration-300
+    "
+    aria-label="Send email to Suman Basak"
+  >
+    <span>Email me</span>
+    <span className="opacity-70 hidden sm:inline">
+      — sumanbasakpl@gmail.com
+    </span>
+  </a>
+</div>
+
     </div>
   )
 }

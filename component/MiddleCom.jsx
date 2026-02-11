@@ -102,14 +102,15 @@ const MiddleCom = () => {
   <a
     href="mailto:sumanbasakpl@gmail.com"
     className="
+      bg-black/30 backdrop-blur-md
       w-full max-w-xl
       flex items-center justify-center gap-3
       rounded-2xl
-      bg-white/10 backdrop-blur-xl
+    
       px-6 py-5
       text-center text-sm sm:text-base
       text-white font-medium
-      hover:bg-white/20
+      hover:bg-black/20
       hover:scale-[1.02]
       transition-all duration-300
     "

@@ -96,27 +96,7 @@ const About = () => {
           </div>
         </div>
       </div>
-          {/* Mail */}
-          <div className="mt-16 flex justify-center">
-            <a
-              href="mailto:sumanbasakpl@gmail.com"
-              className="
-                bg-white/10 backdrop-blur-xl
-                p-5 rounded-2xl
-                w-full max-w-2xl
-                flex items-center justify-center
-                cursor-pointer
-                hover:bg-white/20
-                transition
-              "
-            >
-              <p className="text-[#ACBAC4] font-medium text-center">
-                Email: sumanbasakpl@gmail.com
-              </p>
-            </a>
-          </div>
-
-
+          
       {/* Resume Section */}
         <div className="mt-16 flex justify-center">
         <a

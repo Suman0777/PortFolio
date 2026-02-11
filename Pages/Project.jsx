@@ -26,7 +26,7 @@ const Project = () => {
   ];
 
   return (
-    <div className="mx-auto mt-12 max-w-4xl px-2">
+    <div className="mx-auto mt-12 max-w-4xl px-2 m-10">
       <div className="m-4 grid grid-cols-1 md:grid-cols-2 gap-7">
         {cardsElement.map((item, index) => (
           <div
@@ -58,21 +58,15 @@ const Project = () => {
               {item.dec}
             </p>
 
-            {/* Buttons (ALWAYS INSIDE) */}
             <div className="mt-auto pt-4 flex justify-center gap-4">
               <a
                 href={item.github}
                 target="_blank"
                 rel="noreferrer"
-                className="
-                  inline-flex items-center justify-center
-                  text-white font-medium text-sm
+
+                className="inline-flex items-center justify-center
                   px-5 py-2.5 rounded-lg
-                  bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700
-                  shadow-md shadow-blue-500/40
-                  hover:bg-gradient-to-br
-                  hover:shadow-lg hover:shadow-blue-600/50
-                  transition-all duration-300
+                  text-[#262626] hover:bg-[#ACBAC4]/80 font-medium text-sm  bg-[#ACBAC4]
                 "
               >
                 GitHub
@@ -86,10 +80,10 @@ const Project = () => {
                   inline-flex items-center justify-center
                   text-white font-medium text-sm
                   px-5 py-2.5 rounded-lg
-                  bg-gradient-to-r from-green-400 via-green-500 to-green-600
-                  shadow-md shadow-green-500/40
+                  bg-[#30364F]
+                  shadow-md shadow-[#30364F]/40
                   hover:bg-gradient-to-br
-                  hover:shadow-lg hover:shadow-green-600/50
+                  hover:shadow-lg hover:shadow-[#30364F]-600/50
                   transition-all duration-300
                 "
               >

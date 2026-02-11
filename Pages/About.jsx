@@ -18,7 +18,7 @@ const About = () => {
       >
         {/* Text Section */}
         <div className="md:flex-1 bg-black/30 backdrop-blur-md p-5 sm:p-6 rounded-2xl">
-          <p className="text-[#ACBAC4] text-sm sm:text-base leading-relaxed">
+          <div className="text-[#ACBAC4] text-sm sm:text-base leading-relaxed">
 
             Hi, I’m Suman, a full-stack developer from India,&nbsp;
 
@@ -72,7 +72,7 @@ const About = () => {
             I enjoy solving complex problems and turning ideas into reliable products that deliver real impact.
             Focused on maintainable code and seamless user experiences,
             I’m always learning, building, and pushing myself to create solutions that truly matter.
-          </p>
+          </div>
         </div>
 
         {/* Profile Image */}
@@ -96,13 +96,33 @@ const About = () => {
           </div>
         </div>
       </div>
+          {/* Mail */}
+          <div className="mt-16 flex justify-center">
+            <a
+              href="mailto:sumanbasakpl@gmail.com"
+              className="
+                bg-white/10 backdrop-blur-xl
+                p-5 rounded-2xl
+                w-full max-w-2xl
+                flex items-center justify-center
+                cursor-pointer
+                hover:bg-white/20
+                transition
+              "
+            >
+              <p className="text-[#ACBAC4] font-medium text-center">
+                Email: sumanbasakpl@gmail.com
+              </p>
+            </a>
+          </div>
 
 
       {/* Resume Section */}
         <div className="mt-16 flex justify-center">
         <a
             href="/resume.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="
             bg-white/10 backdrop-blur-xl
             p-5 rounded-2xl
@@ -126,18 +146,18 @@ const About = () => {
         </a>
         </div>
 
-
+      
 
 
     {/* Skill Section */}
 
       <div className='mt-16 flex justify-center'>
-          <div className='bg-[#232B3B]/40 backdrop-blur-xl
-            p-5 rounded-2xl
-            w-full max-w-2xl
+          <div className='bg-[#232B3B]/20 backdrop-blur-xl
+            p-5 rounded-3xl
+            w-full max-w-xl
             flex flex-col gap-3.5 items-center
             cursor-pointer
-            hover:bg-[#232B3B]/30
+            hover:bg-[#232B3B]/40
              transition'>
             <h1 className='text-white font-medium'>
                 Skills

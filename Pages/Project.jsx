@@ -23,6 +23,13 @@ const Project = () => {
       github: "https://github.com/Suman0777/Aura",
       live: "https://aura-ashen-delta.vercel.app/",
     },
+    {
+      imgins: "/Project4.png",
+      dec: "A collection of 15 JavaScript mini projects showcasing DOM manipulation, API integration, UI components, and interactive web features.",
+      topic: "15 Small javaScript Project",
+      github: "https://github.com/Suman0777/15-javaScript-projects",
+      live: "",
+    },
   ];
 
   return (

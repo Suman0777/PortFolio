@@ -14,14 +14,14 @@ const MobileSidebar = ({ open, onClose }) => {
 
       <div
         className={`
-          fixed top-0 left-0 h-full w-64 bg-[#0f172a]
+          fixed top-0 left-0 h-full w-64 rounded-r-[13px] bg-[#191E24]
           z-50
           transform
           transition-transform duration-800 ease-[cubic-bezier(0.16,1,0.3,1)]
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <div className="p-6 space-y-6 text-white">
+        <div className="p-6 space-y-6">
           
           <div className="flex justify-end">
             <img
@@ -44,7 +44,7 @@ const MobileSidebar = ({ open, onClose }) => {
               href={item.path}
               onClick={onClose}
               className={`
-                text-xl font-medium block hover:text-cyan-400
+                text-xl text-[#F5F2F2] font-semibold block hover:text-cyan-400
                 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]
                 ${open ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"}
               `}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Buttonicon from "../BuildsSmall/Buttonicon";
 import Imagess from "../BuildsSmall/Imagess";
 import MobileSidebar from "./MobileSidebar";
@@ -6,7 +6,6 @@ import MobileSidebar from "./MobileSidebar";
 const Top = () => {
   const [selected, setSelected] = useState(null);
   const [humbugerrr, sethumburger] = useState(false);
-
 
   const navItems = [
     { label: "Home", to: "/" },
@@ -22,7 +21,7 @@ const Top = () => {
 
 
       {/* Navigation */}
-      <div className=" hidden  lg:flex gap-6 ">
+      <div className=" hidden lg:flex gap-6 ">
         {navItems.map((item, index) => (
           <div
             key={index}

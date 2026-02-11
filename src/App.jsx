@@ -1,32 +1,32 @@
-import Backgrounds from '../BuildsSmall/Backgrounds'
-import Top from '../component/Top'
-import About from '../Pages/About'
-import Carer from '../Pages/Carer'
-import Homepage from '../Pages/Homepage'
-import Linkss from '../Pages/Linkss'
-import Project from '../Pages/Project'
-import './App.css'
-import { Routes, Route, Navigate, useNavigate } from 'react-router-dom'
+import { Routes, Route, useLocation } from "react-router-dom";
+import Backgrounds from "../BuildsSmall/Backgrounds";
+import Top from "../component/Top";
+import Homepage from "../Pages/Homepage";
+import About from "../Pages/About";
+import Project from "../Pages/Project";
+import Linkss from "../Pages/Linkss";
+import Carer from "../Pages/Carer";
+import "./App.css";
 
 function App() {
-  const Navigate = useNavigate();
+  const location = useLocation();
+
   return (
-    <div >
-      
-      <Backgrounds>
-        <Top/>
+    <Backgrounds>
+      <Top />
+
+      {/* key makes animation restart */}
+      <div key={location.pathname} className="blur-in">
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path='/about' element={<About/>}/>
-          <Route path='/projects' element={<Project/>}/>
-          <Route path='/links' element={<Linkss/>}/>
-          <Route path='/career' element={<Carer/>}/>
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/links" element={<Linkss />} />
+          <Route path="/career" element={<Carer />} />
         </Routes>
-      </Backgrounds>
-      
-    </div >
-    
-  )
+      </div>
+    </Backgrounds>
+  );
 }
 
-export default App
+export default App;

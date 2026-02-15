@@ -16,6 +16,13 @@ const Project = () => {
       github: "https://github.com/Suman0777/Skillora",
       live: "https://skillora-kappa.vercel.app/",
     },
+        {
+      imgins: "/Project5.png",
+      dec: "A web-based facial recognition app built with React and face-api.js that detects faces and expressions in real time using the device camera.",
+      topic: "FaceApp",
+      github: "https://github.com/Suman0777/FaceRecognitaion",
+      live: "https://faceapp-pi.vercel.app/",
+    },
     {
       imgins: "/project3.png",
       dec: "Aura is a front-end UI project created with HTML and CSS, showcasing a modern and visually appealing design.",

@@ -100,7 +100,7 @@ const About = () => {
       {/* Resume Section */}
         <div className="mt-16 flex justify-center">
         <a
-            href="/resume.pdf"
+            href="/Suman_Resume (2).pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="

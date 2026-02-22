@@ -9,11 +9,6 @@ const Homepage = () => {
   return (
     <div className="scroll-smooth">
       <MiddleCom />
-
-      <div className="my-2 flex justify-center">
-      <GithubStats/>
-      </div>
-
       <Project />
       <Carer />
     </div>

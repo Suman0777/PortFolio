@@ -10,25 +10,18 @@ const Project = () => {
       live: "https://chattix-nine.vercel.app/login",
     },
     {
+    imgins: "/Project5.png",
+    dec: "A web-based facial recognition app built with React and face-api.js that detects faces and expressions in real time using the device camera.",
+    topic: "FaceApp",
+    github: "https://github.com/Suman0777/FaceRecognitaion",
+    live: "https://faceapp-pi.vercel.app/",
+  },
+    {
       imgins: "/project2.png",
       dec: "Skillora is a front-end UI website built with HTML, CSS, and JavaScript, designed to practice layout, styling, and user interface concepts.",
       topic: "Skillora",
       github: "https://github.com/Suman0777/Skillora",
       live: "https://skillora-kappa.vercel.app/",
-    },
-        {
-      imgins: "/Project5.png",
-      dec: "A web-based facial recognition app built with React and face-api.js that detects faces and expressions in real time using the device camera.",
-      topic: "FaceApp",
-      github: "https://github.com/Suman0777/FaceRecognitaion",
-      live: "https://faceapp-pi.vercel.app/",
-    },
-    {
-      imgins: "/project3.png",
-      dec: "Aura is a front-end UI project created with HTML and CSS, showcasing a modern and visually appealing design.",
-      topic: "Aura",
-      github: "https://github.com/Suman0777/Aura",
-      live: "https://aura-ashen-delta.vercel.app/",
     },
     {
       imgins: "/Project4.png",

@@ -19,9 +19,9 @@ const Carer = () => {
         {experiences.map((exp, index) => (
           <div key={index} className="relative flex items-start gap-6">
             
-            <div className="relative">
+            <div className="relative top-4">
               <span className="absolute left-[-7px] top-1 h-4 w-4 rounded-full bg-cyan-400 animate-ping opacity-75" />
-              <span className="absolute left-[-7px] top-1 h-4 w-4 rounded-full bg-cyan-400" />
+              <span className="absolute left-[-7px] top-1 h-4 w-4 rounded-full bg-cyan-700" />
             </div>
 
             <div className="bg-white/10 backdrop-blur-xl p-4 rounded-xl w-full">

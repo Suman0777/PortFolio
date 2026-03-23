@@ -10,6 +10,13 @@ const Project = () => {
       live: "https://chattix-nine.vercel.app/login",
     },
     {
+      imgins: "/Project6.png",
+      dec: "This project is currently under development. It is an AI-powered web application that enables image generation, background removal, and interactive chat based on user input. The tech stack includes React, Node.js, Express, MongoDB, Hugging Face, along with three frontend frameworks.",
+      topic: "Aivon",
+      github: "https://github.com/Suman0777/Aivon",
+      live: "",
+    },
+    {
     imgins: "/Project5.png",
     dec: "A web-based facial recognition app built with React and face-api.js that detects faces and expressions in real time using the device camera.",
     topic: "FaceApp",
@@ -39,7 +46,7 @@ const Project = () => {
           <div
             key={index}
             className="
-              rounded-2xl bg-[#192628]
+              rounded-2xl bg-[#19262c]/50 backdrop-blur-md
               p-4 cursor-pointer
               flex flex-col
               transition-all duration-300 ease-out
@@ -56,12 +63,12 @@ const Project = () => {
             </div>
 
             {/* Title */}
-            <p className="mt-3 text-lg font-bold text-center text-[#6f8b9d]">
+            <p className="mt-3 text-lg font-bold text-center text-[#658da6]">
               {item.topic}
             </p>
 
             {/* Description */}
-            <p className="mt-1 text-sm text-center text-[#6f8b9d]">
+            <p className="mt-1 text-sm text-center text-[#6e8da0]">
               {item.dec}
             </p>
 

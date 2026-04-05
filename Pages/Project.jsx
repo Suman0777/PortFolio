@@ -14,7 +14,7 @@ const Project = () => {
       dec: "This project is currently under development. It is an AI-powered web application that enables image generation, background removal, and interactive chat based on user input. The tech stack includes React, Node.js, Express, MongoDB, Hugging Face, along with three frontend frameworks.",
       topic: "Aivon",
       github: "https://github.com/Suman0777/Aivon",
-      live: "",
+      live: "https://aivon-iota.vercel.app/",
     },
     {
     imgins: "/Project5.png",

@@ -2,9 +2,9 @@ import React from "react";
 import DivssLink from "../BuildsSmall/DivssLink";
 
 const links = [
-  { Name: "Resume",   icoans: "/download-solid.svg", linsk: "/Suman_Resume (2).pdf",                              desc: "Download my latest resume" },
-  { Name: "GitHub",   icoans: "/githubLOgo.svg",      linsk: "https://github.com/suman0777",                      desc: "github.com/suman0777" },
-  { Name: "LeetCode", icoans: "/LeetCode.svg",         linsk: "https://leetcode.com/u/Suman0777/",                 desc: "leetcode.com/u/Suman0777" },
+  { Name: "Resume",   icoans: "/download (1).gif", linsk: "/Suman_Resume (2).pdf",                              desc: "Download my latest resume" },
+  { Name: "GitHub",   icoans: "/github (1).png",      linsk: "https://github.com/suman0777",                      desc: "github.com/suman0777" },
+  { Name: "LeetCode", icoans: "/leetcode copy.svg",         linsk: "https://leetcode.com/u/Suman0777/",                 desc: "leetcode.com/u/Suman0777" },
   { Name: "LinkedIn", icoans: "/linkedin.png",       linsk: "https://www.linkedin.com/in/suman-basak-191237290/",desc: "linkedin.com/in/suman-basak" },
   { Name: "Twitter",  icoans: "/twitter.png",       linsk: "https://x.com/sunzuu077",                          desc: "x.com/sunzuu077" },
 ];

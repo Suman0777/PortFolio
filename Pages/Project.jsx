@@ -14,7 +14,7 @@ const cardsElement = [
     imgins: "/Project7.png",
     dec: "3D T-shirt design studio with real-time customization powered by Three.js and AI-generated designs via Stable Diffusion.",
     topic: "Drape",
-    tag: "3D · AI · React",
+    tag: "3D · AI · Three.js · React",
     github: "https://github.com/Suman0777/drape",
     live: "https://drape-ten.vercel.app/",
   },

@@ -7,7 +7,7 @@ import DivssLink from "../BuildsSmall/DivssLink";
 
 const resumeLink = {
   Name: "Resume",
-  icoans: "/download-solid.svg",
+  icoans: "/download (1).gif",
   linsk: "/Suman_Resume (2).pdf",
   desc: "Download my latest resume",
 };
@@ -41,6 +41,10 @@ const row1 = [
   { slug: "mysql",       name: "MySQL" },
   { slug: "redux",       name: "Redux" },
   { slug: "tailwindcss", name: "Tailwind" },
+  { slug: "docker",      name: "Docker" },
+  { slug: "supabase",    name: "Supabase" },
+  { slug: "prisma",    name: "Prisma" },
+  { slug: "python",    name: "Python" },
 ];
 
 const row2 = [
@@ -54,6 +58,10 @@ const row2 = [
   { slug: "c",          name: "C" },
   { slug: "cplusplus",  name: "C++" },
   { slug: "threedotjs", name: "Three.js" },
+  { slug: "docker",      name: "Docker" },
+  { slug: "supabase",    name: "Supabase" },
+  { slug: "prisma",    name: "Prisma" },
+  { slug: "python",    name: "Python" },
 ];
 
 const About = () => {

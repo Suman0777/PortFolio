@@ -1,6 +1,6 @@
 import React from "react";
-import {  ExternalLink } from "lucide-react";
-import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button"
+import { ExternalLink } from "lucide-react";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 const cardsElement = [
   {
     imgins: "/Project6.png",
@@ -55,7 +55,6 @@ const cardsElement = [
 const Project = () => {
   return (
     <section className="mx-auto max-w-5xl px-4 py-16">
-
       {/* Section header */}
       <div className="flex items-center gap-4 mb-10">
         <span className="text-xs font-mono text-cyan-400 tracking-[0.2em] uppercase">
@@ -77,8 +76,10 @@ const Project = () => {
               hover:shadow-[0_0_40px_rgba(6,182,212,0.08)]"
           >
             {/* Glowing top accent line */}
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500/60 to-transparent
-              opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div
+              className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500/60 to-transparent
+              opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            />
 
             {/* Image + overlay */}
             <div className="relative h-52 overflow-hidden">
@@ -120,7 +121,11 @@ const Project = () => {
                   className="flex items-center gap-1.5 text-xs font-medium text-white/60
                     hover:text-white transition-colors duration-200"
                 >
-                  <img src="githubLOgo.svg" className="w-5 h-auto bg-gray-300 rounded-full border border-white/20" alt="github_logo" />
+                  <img
+                    src="githubLOgo.svg"
+                    className="w-5 h-auto bg-gray-300 rounded-full border border-white/20"
+                    alt="github_logo"
+                  />
                   Source
                 </a>
 
@@ -137,21 +142,31 @@ const Project = () => {
                       <ExternalLink size={13} />
                       Live Demo
                     </a> */}
-                    <InteractiveHoverButton
-                    className="flex items-center gap-1.5 text-xs font-medium text-cyan-400/80
-                        hover:text-cyan-300 transition-colors duration-200 w-37">
-                      <span className="flex gap-1">
-
-                      Live Demo
-                      <ExternalLink size={13} />
-                      </span>
-                    </InteractiveHoverButton>
+                    <a
+                      href={item.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1.5 text-xs font-medium text-cyan-400/80
+                        hover:text-cyan-300 transition-colors duration-200"
+                    >
+                      <InteractiveHoverButton
+                        className="flex items-center gap-1.5 text-xs font-medium text-cyan-400/80
+                        hover:text-cyan-300 transition-colors duration-200 w-37"
+                      >
+                        <span className="flex gap-1">
+                          Live Demo
+                          <ExternalLink size={13} />
+                        </span>
+                      </InteractiveHoverButton>
+                    </a>
                   </>
                 )}
 
                 {/* Right side glow dot */}
-                <div className="ml-auto w-1.5 h-1.5 rounded-full bg-cyan-500/40 group-hover:bg-cyan-400
-                  group-hover:shadow-[0_0_6px_rgba(6,182,212,0.8)] transition-all duration-300" />
+                <div
+                  className="ml-auto w-1.5 h-1.5 rounded-full bg-cyan-500/40 group-hover:bg-cyan-400
+                  group-hover:shadow-[0_0_6px_rgba(6,182,212,0.8)] transition-all duration-300"
+                />
               </div>
             </div>
           </div>

@@ -6,6 +6,7 @@ import About from "../Pages/About";
 import Project from "../Pages/Project";
 import Linkss from "../Pages/Linkss";
 import Carer from "../Pages/Carer";
+import { Meteors } from "@/components/ui/meteors";
 import "./App.css";
 
 function App() {
@@ -13,8 +14,11 @@ function App() {
 
   return (
     <div>
-      {/* <AnimatedThemeToggler /> */}
-      
+      {/* Full-screen meteor layer */}
+      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <Meteors />
+      </div>
+
 
       <div key={location.pathname} className="blur-in">
         <Top />

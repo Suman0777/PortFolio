@@ -15,12 +15,9 @@ if (!localStorage.getItem("theme")) {
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none w-screen h-screen">
-        <Particles quantity={600} />
-        <div className="h-full w-full overflow-hidden">
-          <Meteors minDelay={10} number={20} />
-        </div>
-      </div>
+       {/* <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none w-screen h-screen">
+       </div>  */}
+        <Particles quantity={600} className="fixed inset-0 -z-10 overflow-hidden pointer-events-none w-screen h-screen"/>
       <App />
     </BrowserRouter>
   </StrictMode>,

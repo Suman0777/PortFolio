@@ -36,6 +36,22 @@
 /* ===============================
    1. Month labels (Mar, Apr...)
 ================================ */
+@keyframes marquee-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.marquee-left  { animation: marquee-left  28s linear infinite; }
+.marquee-right { animation: marquee-right 28s linear infinite; }
+.marquee-left:hover,
+.marquee-right:hover { animation-play-state: paused; }
+
+/* ===============================
+   1. Month labels (Mar, Apr...)
+================================ */
 .react-github-calendar svg text {
   fill: #ffffff !important;
 }

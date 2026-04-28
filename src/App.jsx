@@ -12,10 +12,12 @@ function App() {
   const location = useLocation();
 
   return (
-    <Backgrounds>
-      <Top />
+    <div>
+      {/* <AnimatedThemeToggler /> */}
+      
 
       <div key={location.pathname} className="blur-in">
+        <Top />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
@@ -24,7 +26,7 @@ function App() {
           <Route path="/career" element={<Carer />} />
         </Routes>
       </div>
-    </Backgrounds>
+    </div>
   );
 }
 

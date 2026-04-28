@@ -1,5 +1,7 @@
+import { Icon } from 'lucide-react';
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+
 
 const Buttonicon = ({ label, to }) => {
   const navigate = useNavigate();
@@ -7,7 +9,7 @@ const Buttonicon = ({ label, to }) => {
   return (
     <button
       onClick={()=> to && navigate(to)}
-      className="relative text-xl font-medium group  cursor-pointer "
+      className="relative text-[1rem] font-medium group  cursor-pointer flex items-center gap-1"
     >
       {label}
 
@@ -17,7 +19,7 @@ const Buttonicon = ({ label, to }) => {
           pointer-events-none
           absolute left-0 -bottom-1
           h-[2px] w-full
-          bg-black
+          bg-foreground
           scale-x-0 origin-left
           transition-transform duration-300 ease-out
           group-hover:scale-x-100

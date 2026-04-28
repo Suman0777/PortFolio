@@ -10,7 +10,7 @@ const Imagess = ({Link, imagesss}) => {
       <img
         src= {imagesss}
         alt="Twitter"
-        className="w-6 hover:scale-120 transition"
+        className="w-9 hover:scale-120 transition"
       />
     </a>
   )

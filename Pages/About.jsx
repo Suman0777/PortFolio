@@ -1,177 +1,216 @@
-import React from 'react'
-import Buttonicon from '../BuildsSmall/Buttonicon'
-import Top from '../component/Top'
-import Imagess from '../BuildsSmall/Imagess'
+import React from "react";
+import { PixelImage } from "@/components/ui/pixel-image";
+import { Highlighter } from "@/components/ui/highlighter";
+import { WordRotate } from "@/components/ui/word-rotate";
+import { TextAnimate } from "@/components/ui/text-animate";
+import DivssLink from "../BuildsSmall/DivssLink";
+
+const resumeLink = {
+  Name: "Resume",
+  icoans: "/download-solid.svg",
+  linsk: "/Suman_Resume (2).pdf",
+  desc: "Download my latest resume",
+};
+
+const SkillPill = ({ slug, name }) => (
+  <span
+    className="inline-flex items-center gap-2 mx-2 px-3 py-1.5 rounded-lg
+      hover:border-cyan-500/40 hover:bg-cyan-500/5
+      transition-all duration-300 cursor-default shrink-0"
+    style={{ background: 'var(--pill-bg)', border: '1px solid var(--pill-border)' }}
+  >
+    <img
+      src={`https://cdn.simpleicons.org/${slug}`}
+      alt={name}
+      className="w-4 h-4 object-contain"
+    />
+    <span className="text-xs font-medium whitespace-nowrap" style={{ color: 'var(--pill-text)' }}>
+      {name}
+    </span>
+  </span>
+);
+
+const row1 = [
+  { slug: "javascript",  name: "JavaScript" },
+  { slug: "typescript",  name: "TypeScript" },
+  { slug: "react",       name: "React" },
+  { slug: "nodedotjs",   name: "Node.js" },
+  { slug: "express",     name: "Express" },
+  { slug: "mongodb",     name: "MongoDB" },
+  { slug: "postgresql",  name: "PostgreSQL" },
+  { slug: "mysql",       name: "MySQL" },
+  { slug: "redux",       name: "Redux" },
+  { slug: "tailwindcss", name: "Tailwind" },
+];
+
+const row2 = [
+  { slug: "html5",      name: "HTML5" },
+  { slug: "css",        name: "CSS3" },
+  { slug: "vite",       name: "Vite" },
+  { slug: "git",        name: "Git" },
+  { slug: "github",     name: "GitHub" },
+  { slug: "postman",    name: "Postman" },
+  { slug: "figma",      name: "Figma" },
+  { slug: "c",          name: "C" },
+  { slug: "cplusplus",  name: "C++" },
+  { slug: "threedotjs", name: "Three.js" },
+];
 
 const About = () => {
   return (
-    <div >
+    <div className="mx-auto max-w-4xl px-4 py-12 md:py-24">
 
-    <div className='mx-auto max-w-4xl px-4 py-12 md:px-0 md:py-24'>
-            {/* Main Content */}
-      <div
-        className="
-          flex flex-col-reverse
-          md:flex-row md:items-center
-          gap-12 md:gap-20
-        "
-      >
-        {/* Text Section */}
-        <div className="md:flex-1 bg-black/30 backdrop-blur-md p-5 sm:p-6 rounded-2xl">
-          <div className="text-[#ACBAC4] text-sm sm:text-base leading-relaxed">
+      {/* Section header */}
+      <div className="flex items-center gap-4 mb-12">
+        <span className="text-xs font-mono text-cyan-500 tracking-[0.2em] uppercase">
+          03 / About
+        </span>
+        <div className="flex-1 h-px" style={{ background: 'linear-gradient(to right, var(--section-line), transparent)' }} />
+      </div>
 
-            Hi, I’m Suman, a full-stack developer from India,&nbsp;
+      {/* Hero row */}
+      <div className="flex flex-col-reverse md:flex-row md:items-center gap-12 md:gap-16">
 
-            {/* Tooltip */}
+        {/* Text */}
+        <div className="flex-1 flex flex-col gap-5">
+
+          <TextAnimate
+            animation="slideLeft"
+            by="word"
+            duration={1.0}
+            as="p"
+            className="text-xs font-mono text-cyan-500 tracking-[0.25em] uppercase"
+          >
+            {"Hello, world — I'm"}
+          </TextAnimate>
+
+          <TextAnimate
+            animation="slideLeft"
+            by="word"
+            duration={1.2}
+            delay={0.3}
+            as="h1"
+            style={{ color: 'var(--text-primary)' }}
+            className="text-4xl sm:text-5xl font-bold leading-tight tracking-tight"
+          >
+            {"Suman Basak"}
+          </TextAnimate>
+
+          <div className="flex items-center gap-2 flex-wrap">
+            <Highlighter color="#0e7490" strokeWidth={2} animationDuration={900} padding={4}>
+              <TextAnimate
+                animation="slideLeft"
+                by="word"
+                duration={1.2}
+                delay={0.7}
+                as="span"
+                className="text-lg sm:text-xl font-semibold text-cyan-500"
+              >
+                {"Full-Stack Developer"}
+              </TextAnimate>
+            </Highlighter>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <div className="w-6 h-px bg-cyan-500/50" />
+            <WordRotate
+              words={["Building scalable apps.", "Crafting clean UI.", "Solving real problems.", "Shipping fast."]}
+              duration={2400}
+              className="text-xs font-mono text-cyan-500/60 tracking-widest uppercase"
+            />
+          </div>
+
+          <div className="h-px w-full" style={{ background: 'linear-gradient(to right, var(--section-line), transparent)' }} />
+
+          {/* Bio with Kolkata tooltip */}
+          <p className="text-sm sm:text-base leading-relaxed" style={{ color: 'var(--text-muted)' }}>
+            Based in{" "}
             <span className="relative inline-block group">
-              <span className="font-medium underline cursor-pointer text-[#296374]">
+              <span className="text-cyan-600 underline underline-offset-2 cursor-pointer font-medium">
                 Kolkata
               </span>
-
               <span
-                className="
-                  absolute bottom-full left-1/2 -translate-x-1/2 mb-3
-                  z-20 w-[90vw] max-w-sm sm:max-w-md
-                  opacity-0 invisible
-                  group-hover:opacity-100 group-hover:visible
-                  transition-all duration-300
-                  bg-[#232B3B]
-                  border border-white/10
-                  rounded-lg shadow-xl
-                  p-4
-                "
+                className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-30 w-72
+                  opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                  transition-all duration-300 rounded-xl shadow-2xl p-4"
+                style={{ background: 'var(--card-bg)', border: '1px solid var(--card-border)', backdropFilter: 'blur(16px)' }}
               >
                 <span className="grid grid-cols-5 gap-3">
                   <span className="col-span-3">
-                    <h3 className="font-semibold mb-1 text-white">
-                      About Kolkata
-                    </h3>
-                    <p className="text-sm text-[#6f8b9d]">
-                      Kolkata is a major cultural and tech hub in Eastern India.
+                    <h3 className="font-semibold mb-1 text-sm" style={{ color: 'var(--text-primary)' }}>About Kolkata</h3>
+                    <p className="text-xs leading-relaxed" style={{ color: 'var(--text-muted)' }}>
+                      A major cultural and tech hub in Eastern India.
                     </p>
                   </span>
-                  <img
-                    src="/Kolkata.png"
-                    alt="Kolkata"
-                    className="col-span-2 rounded"
-                  />
+                  <img src="/Kolkata.png" alt="Kolkata" className="col-span-2 rounded-lg object-cover" />
                 </span>
-
                 <a
                   href="https://en.wikipedia.org/wiki/Kolkata"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 inline-block text-[#3B82F6]"
+                  className="mt-3 inline-flex items-center gap-1 text-xs text-cyan-500 hover:text-cyan-400 transition-colors"
                 >
                   Read more →
                 </a>
               </span>
             </span>
-
-            &nbsp;with a passion for building clean, scalable, and mobile-first web applications.
+            {" "}— passionate about building clean, scalable, mobile-first web applications.
             I enjoy solving complex problems and turning ideas into reliable products that deliver real impact.
-            Focused on maintainable code and seamless user experiences,
-            I’m always learning, building, and pushing myself to create solutions that truly matter.
-          </div>
+            Focused on maintainable code and seamless user experiences, I'm always learning and pushing myself
+            to create solutions that truly matter.
+          </p>
+
         </div>
 
-        {/* Profile Image */}
-        <div className="flex justify-center">
-          <div
-            className="
-              w-[170px] h-[210px]
-              sm:w-[200px] sm:h-[240px]
-              md:w-[240px] md:h-[270px]
-              rounded-3xl overflow-hidden
-              bg-white/10 backdrop-blur-xl
-              border border-white/20
-              shadow-xl
-            "
-          >
-            <img
-              src="/profileimage.png"
-              alt="Profile"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
-        </div>
-      </div>
-          
-      {/* Resume Section */}
-        <div className="mt-16 flex justify-center">
-        <a
-            href="/Suman_Resume (2).pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-            bg-white/10 backdrop-blur-xl
-            p-5 rounded-2xl
-            w-full max-w-2xl
-            flex items-center justify-between
-            cursor-pointer
-            hover:bg-white/20
-             transition
-              
-            "
-        >
-            <p className="text-[#ACBAC4] font-medium">
-            Resume
-            </p>
-
-            <img
-            src="/download-solid.svg"
-            alt="Download resume"
-            className="w-6 h-6 caret-amber-50 sm:w-5 sm:h-5"
-            />
-        </a>
-        </div>
-
-      
-
-
-    {/* Skill Section */}
-
-      <div className='mt-16 flex justify-center'>
-          <div className='bg-[#232B3B]/20 backdrop-blur-xl
-            p-5 rounded-3xl
-            w-full max-w-xl
-            flex flex-col gap-3.5 items-center
-            cursor-pointer
-            hover:bg-[#232B3B]/40
-             transition'>
-            <h1 className='text-white font-medium'>
-                Skills
-            </h1>
-            <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-9 gap-6 place-items-center">
-                <img src="https://cdn.simpleicons.org/javascript" width="30" className=' rounded-b-sm'/>
-                <img src="https://cdn.simpleicons.org/typescript" width="40" />
-                <img src="https://cdn.simpleicons.org/c" width="40" />
-                <img src="https://cdn.simpleicons.org/cplusplus" width="40" />
-                <img src="https://cdn.simpleicons.org/html5" width="40" />
-                <img src="https://cdn.simpleicons.org/css" width="40" />
-                <img src="https://cdn.simpleicons.org/react" width="40" />
-                <img src="https://cdn.simpleicons.org/redux" width="40" />
-                <img src="https://cdn.simpleicons.org/tailwindcss" width="40" />
-                <img src="https://cdn.simpleicons.org/vite" width="40" />
-                <img src="https://cdn.simpleicons.org/mongodb" width="40" />
-                <img src="https://cdn.simpleicons.org/mysql" width="40" />
-                <img src="https://cdn.simpleicons.org/postgresql" width="40" />
-                <img src="https://cdn.simpleicons.org/express" width="40" />
-                <img src="https://cdn.simpleicons.org/nodedotjs" width="40" />
-                <img src="https://cdn.simpleicons.org/git" width="40" />
-                <img src="https://cdn.simpleicons.org/github" width="40" />
-                <img src="https://cdn.simpleicons.org/postman" width="40" />
-                <img src="https://cdn.simpleicons.org/figma" width="40" />
+        {/* Image */}
+        <div className="flex justify-center md:justify-end shrink-0">
+          <div className="relative">
+            <div className="absolute inset-0 rounded-3xl bg-cyan-500/10 blur-2xl scale-110 -z-10" />
+            <div
+              className="w-[200px] h-[240px] sm:w-[220px] sm:h-[260px] md:w-[250px] md:h-[290px]
+                rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(6,182,212,0.08)] border"
+              style={{ borderColor: 'var(--card-border)' }}
+            >
+              <PixelImage src="/pic2.jpeg" alt="Profile" />
             </div>
           </div>
+        </div>
+
       </div>
 
+      {/* Resume */}
+      <div className="mt-12">
+        <DivssLink {...resumeLink} index={0} />
+      </div>
 
+      {/* Skills */}
+      <div className="mt-14">
+        <div className="flex items-center gap-4 mb-8">
+          <span className="text-xs font-mono text-cyan-500 tracking-[0.2em] uppercase">Skills</span>
+          <div className="flex-1 h-px" style={{ background: 'linear-gradient(to right, var(--section-line), transparent)' }} />
+        </div>
+
+        <div
+          className="relative overflow-hidden rounded-2xl backdrop-blur-xl py-5 space-y-3"
+          style={{ background: 'var(--card-bg)', border: '1px solid var(--card-border)' }}
+        >
+          {/* Fade edges */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-16 z-10"
+            style={{ background: 'linear-gradient(to right, var(--fade-edge), transparent)' }} />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-16 z-10"
+            style={{ background: 'linear-gradient(to left, var(--fade-edge), transparent)' }} />
+
+          <div className="flex w-max marquee-left">
+            {[...row1, ...row1].map((s, i) => <SkillPill key={i} {...s} />)}
+          </div>
+          <div className="flex w-max marquee-right">
+            {[...row2, ...row2].map((s, i) => <SkillPill key={i} {...s} />)}
+          </div>
+        </div>
+      </div>
 
     </div>
+  );
+};
 
-          </div>
-  )
-}
-
-export default About
+export default About;

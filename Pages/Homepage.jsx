@@ -9,6 +9,7 @@ const Homepage = () => {
   return (
     <div className="scroll-smooth">
       <MiddleCom />
+      <GithubStats />
       <Project />
       <Carer />
     </div>

@@ -112,7 +112,7 @@ const About = () => {
                 duration={1.2}
                 delay={0.7}
                 as="span"
-                className="text-lg sm:text-xl font-semibold text-cyan-500"
+                className="text-lg sm:text-xl font-semibold text-white/70"
               >
                 {"Full-Stack Developer"}
               </TextAnimate>

@@ -3,6 +3,13 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
+    role: "Fullstack Developer Intern",
+    company: "Lupria",
+    time: "May 2026 - July 2026",
+    type: "Internship",
+    desc: "Worked on developing and maintaining web applications, collaborating with the team to implement new features, fix bugs, and optimize performance. Gained hands-on experience in full-stack development, including front-end and back-end technologies.",
+  },
+  {
     role: "Open Source Contributor",
     company: "Girl Summer of Code",
     time: "2024",

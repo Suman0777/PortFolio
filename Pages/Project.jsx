@@ -11,6 +11,14 @@ const cardsElement = [
     live: "https://aivon-iota.vercel.app/",
   },
   {
+    imgins: "/project8.png",
+    dec: "Drag-and-drop file sharing web app with real-time updates using Socket.io and built with Next.js. Supports multiple file uploads and provides a seamless user experience. And No Database is used here to store the files during the session.",
+    topic: "CosmoDrop",
+    tag: "Drag And Drop File · Socket.io · Next.js · Full-Stack · TypeScript",
+    github: "https://github.com/Suman0777/CosmoDrop",
+    live: "https://cosmo-drop.vercel.app/",
+  },
+  {
     imgins: "/Project7.png",
     dec: "3D T-shirt design studio with real-time customization powered by Three.js and AI-generated designs via Stable Diffusion.",
     topic: "Drape",

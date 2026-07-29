@@ -45,7 +45,7 @@ const Carer = () => {
               <div className="relative shrink-0 mt-5">
                 <span className="absolute -left-[3px] top-0 w-[18px] h-[18px] rounded-full
                   bg-cyan-400 animate-ping opacity-30" />
-                <span className="relative block w-3 h-3 rounded-full
+                <span className="relative block w-3.5 h-3.5 rounded-full
                   bg-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.8)]" />
               </div>
 
